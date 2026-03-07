@@ -1,7 +1,13 @@
+import NavBar from "./components/NavBar.tsx";
+import Footer from "./components/Footer.tsx";
+import HeroSection from "./components/HeroSection.tsx";
+
 function App() {
   return (
     <>
-        <p className={"text-green-500 text-xl font-bold"}>Big Shwein Web</p>
+        <NavBar />
+        <HeroSection />
+        <Footer />
     </>
   )
 }
