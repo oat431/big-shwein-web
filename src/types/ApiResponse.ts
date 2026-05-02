@@ -1,0 +1,11 @@
+export interface ApiResponse<T> {
+    data: T | null;
+    status: "SUCCESS" | "FAIL" | "ERROR";
+    error: ApiError | null;
+}
+
+export interface ApiError {
+    HttpCode: number;
+    ErrorCode: string;
+    Message: string;
+}
